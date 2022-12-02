@@ -1,0 +1,145 @@
+@use "./globals/regular";
+@use "./globals/button";
+
+.confirmTitle {
+  position: absolute;
+  text-align: center;
+}
+
+.confirm {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+
+  &__content {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+
+    &__table {
+      @extend .table;
+    }
+
+    &__image {
+      margin-top: 10px;
+      width: 200px;
+    }
+
+    &__name {
+      margin: 0;
+      margin-top: 10px;
+    }
+
+    &__price {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    &__quantity {
+      font-size: 20px;
+    }
+
+    &__topping {
+      @extend .topping;
+    }
+  }
+
+  &__total {
+    @extend .total;
+  }
+
+  &__error {
+    @extend .errorMessage;
+  }
+
+  &__form {
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 18px;
+    background-color: bisque;
+    border: thick double burlywood;
+  }
+
+  &__pay {
+    &__title {
+      @extend .subtitle;
+    }
+
+    &__content {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 30px;
+
+      &__label {
+        margin-top: 10px;
+        text-align: left;
+        margin-right: 20px;
+      }
+
+      &__text {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__btn {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    &__ok {
+      @extend .okBtn;
+    }
+  }
+}
+
+.deliveryUser {
+  &__title {
+    @extend .subtitle;
+  }
+
+  &__content {
+    text-align: center;
+    margin-top: 20px;
+
+    &__label {
+      display: block;
+      margin-top: 10px;
+      text-align: left;
+      margin-left: 20%;
+    }
+
+    &__text {
+      width: 60%;
+      height: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.deliveryTime {
+  &__error {
+    @extend .errorMessage;
+  }
+
+  &__title {
+    @extend .subtitle;
+  }
+
+  &__content {
+    text-align: center;
+    margin-top: 10px;
+
+    &__text {
+      width: 60%;
+      height: 30px;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+  }
+}

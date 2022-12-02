@@ -1,0 +1,14 @@
+.thankyou {
+  margin-top: 200px;
+  text-align: center;
+  &__text {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &__goHome {
+    & a {
+      text-decoration: none;
+      color: #b16400;
+    }
+  }
+}

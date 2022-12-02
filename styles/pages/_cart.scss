@@ -1,0 +1,73 @@
+@use "./globals/button";
+@use "./globals/regular";
+
+.cart {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+
+  & h2 {
+    margin-top: 0;
+  }
+
+  &__alert {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__content {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+
+    &__table {
+      @extend .table;
+    }
+
+    &__image {
+      margin-top: 10px;
+      width: 200px;
+    }
+
+    &__name {
+      margin: 0;
+      margin-top: 10px;
+    }
+
+    &__price {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    &__quantity {
+      font-size: 20px;
+    }
+
+    &__topping {
+      @extend .topping;
+    }
+
+    &__clearBtn {
+      @extend .clearBtn;
+    }
+  }
+
+  &__total {
+    @extend .total;
+  }
+
+  &__btn {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    &__ok {
+      @extend .okBtn;
+    
+    }
+  }
+}

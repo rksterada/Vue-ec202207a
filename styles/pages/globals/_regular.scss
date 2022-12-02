@@ -1,0 +1,80 @@
+@import "./variables";
+
+// 合計金額用
+.total {
+  text-align: center;
+  margin-top: 50px;
+
+  & p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+  & span {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(transparent 70%, orange 70%);
+    margin-left: 20px;
+  }
+}
+// table用
+.table {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  border: thick double $cBorder;
+  border-spacing: 0;
+
+  & th {
+    height: 50px;
+    width: 20%;
+    font-size: 20px;
+    padding: 0;
+  }
+
+  & tr:nth-child(odd) {
+    background-color: $cTableBg;
+  }
+}
+// topping用
+.topping {
+  text-align: center;
+  display: block;
+
+  & ul {
+    display: inline-block;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  & li {
+    list-style: none;
+    text-align: left;
+    justify-content: space-between;
+  }
+  & span {
+    text-align: right;
+  }
+}
+
+// エラーメッセージ
+.errorMessage {
+  text-align: center;
+  color: $cErrorText;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+// サブタイトル
+.subtitle {
+  background-color: antiquewhite;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #b16400;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
